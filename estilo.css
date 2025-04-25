@@ -1,0 +1,133 @@
+
+.titulo
+	{
+	text-decoration: none;
+	font-family: Times New Roman;
+	font-size: 20px;
+	color: #000000;
+}
+
+.texto 
+	{
+	text-decoration: none;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+}
+
+.texto_pg_inicial
+	{
+	text-decoration: none;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #000000;
+}
+
+.texto_rodape
+	{
+	text-decoration: none;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #000000;
+}
+
+.texto_verdana
+{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+}
+
+.texto_verdana_branco
+{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #ffffff;
+}
+
+
+.link_home
+	{
+	text-decoration: none;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+}
+
+.link_home:hover
+	{
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #000000;
+}
+
+.link
+	{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+}
+
+.link:hover
+	{
+	text-decoration: underline;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #696969;
+}
+
+.link_verdana
+	{
+	text-decoration: none;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #000000;
+}
+
+.link_verdana:hover
+	{
+	text-decoration: underline;
+	font-family: Verdana;
+	font-size: 10px;
+	color: #696969;
+}
+
+.link1
+	{
+	text-decoration: none;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #ffffff;
+}
+
+.link1:hover
+	{
+	text-decoration: underline;
+	font-family: Tahoma;
+	font-size: 10px;
+	color: #ffffff;
+}
+
+.input 
+	{
+	Background-Color: #000000; 
+	Border: 2px ridge #000000;
+	font-family:Tahoma; 
+	font-size: 10.5px;
+	color:#ffffff;
+}
+
+.textarea
+	{
+	Background-Color: #000000;
+	Border: 2px ridge #0000000;
+	font-family:Tahoma;
+	font-size: 10.5px;
+	color:#ffffff;
+
+}
+
